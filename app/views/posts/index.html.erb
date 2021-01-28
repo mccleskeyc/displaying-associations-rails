@@ -1,7 +1,7 @@
-<h1>Posts</h1>
+<h1>Categories</h1>
 
 <ul>
-  <% @posts.each do |p| %>
-    <li><%= link_to p.title, post_path(p) %></li>
+  <% @categories.each do |c| %>
+    <li><%= link_to c.name, category_path(c) %></li>
   <% end %>
 </ul>
